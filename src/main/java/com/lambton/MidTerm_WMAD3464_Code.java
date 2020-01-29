@@ -11,15 +11,15 @@ package com.lambton;
  */
 public class MidTerm_WMAD3464_Code {
 
-    public static void main(String[] args) 
+    public static void main(String[] args)
     {
         System.out.println("\n--- Reverse Words");
         String rev = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Output : " + rev);
 
-        rev = LambtonStringTools.reverse(null);
-        System.out.println("Input  : NULL");
+        rev = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
+        System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
         if(rev == null)
         {
             System.out.println("Function returns NULL value");

@@ -14,7 +14,9 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-
+        String[] orginalString;
+        orginalString=new String[60];
+        s
         return null;
     }
     
