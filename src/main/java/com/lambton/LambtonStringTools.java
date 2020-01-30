@@ -5,6 +5,9 @@
  */
 package com.lambton;
 
+import com.sun.jndi.toolkit.ctx.AtomicContext;
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
+
 /**
  *
  * @author Pritesh Patel
@@ -14,15 +17,23 @@ public class LambtonStringTools
     //1 - REVERSE STRING
     public static String reverse(String s)
     {
-        String[] orginalString;
-        orginalString=new String[60];
-        s
+        String orginalString=s;
+        String reverseString;
+        int len=orginalString.length();
+        for(int i=0,j=len-1;i<len/2;i++,j--)
+        {
+           String word=orginalString;
+
+        }
         return null;
     }
-    
+
+
     //2 - FORMAT INITIALS OF STRING
     public static String initials(String s) 
     {
+        String fullName=s;
+        int len=fullName.length();
 
         return null;
     }

@@ -18,8 +18,8 @@ public class MidTerm_WMAD3464_Code {
         System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
         System.out.println("Output : " + rev);
 
-        rev = LambtonStringTools.reverse("Failure will never overtake me if my determination to succeed is strong enough");
-        System.out.println("Input  : Failure will never overtake me if my determination to succeed is strong enough");
+        rev = LambtonStringTools.reverse(null);
+        System.out.println("Input  : NULL");
         if(rev == null)
         {
             System.out.println("Function returns NULL value");
