@@ -59,7 +59,7 @@ public class LambtonStringTools
             {
                 char initial =names[i];
             }
-            return initial;
+            return initials(names);
         }
 
         return null;
