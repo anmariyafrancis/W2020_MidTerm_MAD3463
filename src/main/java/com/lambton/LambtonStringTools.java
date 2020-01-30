@@ -53,20 +53,23 @@ public class LambtonStringTools
         String fullName=s;
         char names[] = fullName.toCharArray();
         int len=fullName.length();
-        for(int i=0;i<len;i++){
-            if(names[i]!='\0'){
+        for(int i=0;i<len;i++)
+        {
+            if(names[i]!='\0')
+            {
                 char initial =names[i];
             }
+            return initial;
         }
 
         return null;
-    }*/
+    }
         
     //3 - FIND MOST FREQUENT CHARACTER FROM STRING
-    /*public static String mostFrequent(String s)
+    public static String mostFrequent(String s)
     {
         return null;
-    }*/
+    }
     
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(int s)
@@ -83,9 +86,9 @@ public class LambtonStringTools
     }
 
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
-    /*public static String replaceSubString(String originalString, String findString, String newString)
+    public static String replaceSubString(String originalString, String findString, String newString)
     {
         return null;
-    }*/
+    }
 }
 
