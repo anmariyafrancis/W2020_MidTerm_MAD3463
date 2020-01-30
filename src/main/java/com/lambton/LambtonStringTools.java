@@ -18,15 +18,37 @@ public class LambtonStringTools
     public static String reverse(String s)
     {
         String orginalString=s;
-        String reverseString;
-        int len=orginalString.length();
+        for (int i = 0; i < orginalString.length(); i++)
+        {
+            System.out.println(orginalString/*[i]*/);
+        }
+        String reverseStrings[]=new String[orginalString.length()];
+        String[] rstr;
+        rstr=new String[10];
+        for(int i=0;i<orginalString.length();i++)
+        {
+            String rev = reverseStrings(orginalString/*[i]*/);
+            reverseStrings[i]=rev;
+            rstr[i]=rev;
+            System.out.println(new String(orginalString/*[i]*/)+rev);
+        }
+    }
+    public static String reverseStrings(String s)
+    {
+        String temp=new String();
+        char names[]=s.toCharArray();
+        int len=names.length;
         for(int i=0,j=len-1;i<len/2;i++,j--)
         {
-           String word=orginalString;
-
+            char t=names[i];
+            names[i]=names[j];
+            names[j]=t;
         }
-        return null;
+        temp=new String(names);
+        return temp;
     }
+}
+        //return null;
 
 
     //2 - FORMAT INITIALS OF STRING
@@ -47,7 +69,21 @@ public class LambtonStringTools
     //4 - CONVERT BINARY NUMBER TO DECIMALS
     public static int binaryToDecimal(String s) 
     {
-       return 0;
+        String binaryNumber=s;
+        int decimal=0;
+        int len=binaryNumber.length();
+        for(int i=0,;i<len/2;i++,i++)
+        {
+            int temp = binaryNumber%10;
+            decimal += temp*2;
+            binaryNumber = binaryNumber/10;
+        }
+        }
+
+        /*for(int i=0;i<binaryNumber.length();i++){
+
+        }*/
+      // return 0;
     }
      
     //5 - REPLACING SUBSTRING WITH NEW STRING IN EXISTING STRING
